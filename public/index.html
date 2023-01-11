@@ -4,15 +4,75 @@
     <title>Personal Links</title>
 
     <style>
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #0f0e17;
+        display: flex; 
+        justify-content: center;
+      }
 
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+        border: solid;
+        border-color: black;
+      }
+
+      .cover {
+        width: 48px;
+        height: 48px;
+        object-fit: cover
+      }
+
+      .profile_name {
+        color: #fffffe;
+        text-align: center;
+      }
+
+      .social_links{
+        background-color: #a7a9be;
+        align-items; center;
+      }
+
+        .social_links a{
+          color: #fffffe;
+          text-decoration: none;
+          text-align: center;
+        }
+
+      .book_links{
+        background-color: #f25f4c;
+        display: flex; 
+        align-items: center;
+        padding: 5px;
+      }
+
+        .book_links a{
+          color: #fffffe;
+          text-decoration: none;
+          text-align: center;
+          flex-grow: 1;
+        }
+
+      .items {
+        display: flex; 
+        flex-direction: column;
+        gap: 30px;
+        max-width: 320px;
+        flex-grow: 1;
+      } 
 
     </style>
 
   </head>
   
   <body>
+    <div class="items"> 
     <div class="banner">
-      <img src="/thumbnails/profile-pic.jpg" alt="Cat Amanda">
+      <img src="/thumbnails/profile-pic.jpg" alt="Cat Amanda" class="banner-image">
     </div>
 
     <div class="profile_name">
@@ -20,33 +80,33 @@
     </div>
 
     <div class="social_links">
-      <p><a href="https://github.com/amsun2" target="_blank">
+      <a href="https://github.com/amsun2" target="_blank">
         GitHub
-      </a></p>
+      </a>
 
-      <p><a href="https://www.linkedin.com/in/amanda-sun-2a4a1798/" target="_blank">
+      <a href="https://www.linkedin.com/in/amanda-sun-2a4a1798/" target="_blank">
         LinkedIn
-      </a></p>
+      </a>
     </div>
 
     <div class="book_links">
-      <img src="/thumbnails/lapvona-cover.jpeg" alt="Lapvona cover">
+      <img src="/thumbnails/lapvona-cover.jpeg" alt="Lapvona cover" class="cover">
       <p><a href="https://www.goodreads.com/en/book/show/59693959-lapvona" target="_blank">
         Lapvona
       </a></p>
 
-      <img src="/thumbnails/piranesi-cover.jpeg" alt="Piranesi cover">
+      <img src="/thumbnails/piranesi-cover.jpeg" alt="Piranesi cover" class="cover">
       <p><a href="https://www.goodreads.com/book/show/50202953-piranesi?from_search=true&from_srp=true&qid=QZ1YyDBQ3f&rank=1" target="_blank">
         Piranesi
       </a></p>
 
-      <img src="/thumbnails/oldwoman-cover.jpg" alt="Old Woman cover">
+      <img src="/thumbnails/oldwoman-cover.jpg" alt="Old Woman cover" class="cover">
       <p><a href="https://www.goodreads.com/book/show/57938998-the-old-woman-with-the-knife?ac=1&from_search=true&qid=iLYQg4ub35&rank=1" target="_blank">
         The Old Woman with the Knife
       </a></p>
 
     </div>
-      
+  </div>  
     
   </body>  
 
