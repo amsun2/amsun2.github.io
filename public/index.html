@@ -3,6 +3,8 @@
   <head>
     <title>Personal Links</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300|PT+Sans" rel="stylesheet">
+
     <style>
       body {
         padding-top: 40px;
@@ -12,56 +14,66 @@
         justify-content: center;
       }
 
+      .banner{
+        display: flex;
+        justify-content: center;
+      }
+
       .banner-image {
         width: 128px;
         height: 128px;
         object-fit: cover;
         border-radius: 128px;
         border: solid;
-        border-color: black;
+        border-color: #e53170;
       }
 
       .cover {
         width: 48px;
         height: 48px;
-        object-fit: cover
+        object-fit: contain;
       }
 
-      .profile_name {
+      .name {
         color: #fffffe;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-family: 'Nunito', Sans-Serif;
       }
 
       .social_links{
-        background-color: #a7a9be;
-        align-items; center;
+        background-color: #0f0e17;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
       }
 
         .social_links a{
           color: #fffffe;
-          text-decoration: none;
           text-align: center;
+          font-family: 'Nunito', Sans-Serif;
         }
 
       .book_links{
-        background-color: #f25f4c;
+        background-color: #a7a9be;
         display: flex; 
         align-items: center;
         padding: 5px;
       }
 
         .book_links a{
-          color: #fffffe;
+          color: black;
           text-decoration: none;
           text-align: center;
           flex-grow: 1;
+          font-family: 'Nunito', Sans-Serif;
         }
 
       .items {
         display: flex; 
         flex-direction: column;
         gap: 30px;
-        max-width: 320px;
+        max-width: 640px;
         flex-grow: 1;
       } 
 
@@ -71,41 +83,44 @@
   
   <body>
     <div class="items"> 
-    <div class="banner">
-      <img src="/thumbnails/profile-pic.jpg" alt="Cat Amanda" class="banner-image">
-    </div>
+      <div class="banner">
+        <img src="/thumbnails/profile-pic.jpg" alt="Cat Amanda" class="banner-image">
+      </div>
 
-    <div class="profile_name">
-      Amanda Sun
-    </div>
+      <div class="name">
+        <h2>Amanda Sun</h2>
+      </div>
 
-    <div class="social_links">
-      <a href="https://github.com/amsun2" target="_blank">
-        GitHub
-      </a>
+      <div class="social_links">
+        <a href="https://github.com/amsun2" target="_blank">
+          <strong>GitHub</strong>
+        </a>
+        <a href="https://www.linkedin.com/in/amanda-sun-2a4a1798/" target="_blank">
+          <strong>LinkedIn</strong>
+        </a>
+      </div>
 
-      <a href="https://www.linkedin.com/in/amanda-sun-2a4a1798/" target="_blank">
-        LinkedIn
-      </a>
-    </div>
+      <div class="name">
+        <h3>Current Reading List</h3>
+      </div>
 
-    <div class="book_links">
-      <img src="/thumbnails/lapvona-cover.jpeg" alt="Lapvona cover" class="cover">
-      <p><a href="https://www.goodreads.com/en/book/show/59693959-lapvona" target="_blank">
-        Lapvona
-      </a></p>
+      <div class="book_links">
+        <img src="/thumbnails/lapvona-cover.jpeg" alt="Lapvona cover" class="cover">
+        <a target="blank" href="https://www.goodreads.com/en/book/show/59693959-lapvona">
+          Lapvona by Ottesa Moshfegh</a>
+      </div>
 
-      <img src="/thumbnails/piranesi-cover.jpeg" alt="Piranesi cover" class="cover">
-      <p><a href="https://www.goodreads.com/book/show/50202953-piranesi?from_search=true&from_srp=true&qid=QZ1YyDBQ3f&rank=1" target="_blank">
-        Piranesi
-      </a></p>
+      <div class="book_links">
+        <img src="/thumbnails/piranesi-cover.jpeg" alt="Piranesi cover" class="cover">
+        <a target="blank" href="https://www.goodreads.com/book/show/50202953-piranesi?from_search=true&from_srp=true&qid=QZ1YyDBQ3f&rank=1">
+          Piranesi by Susanna Clarke</a>
+      </div>
 
-      <img src="/thumbnails/oldwoman-cover.jpg" alt="Old Woman cover" class="cover">
-      <p><a href="https://www.goodreads.com/book/show/57938998-the-old-woman-with-the-knife?ac=1&from_search=true&qid=iLYQg4ub35&rank=1" target="_blank">
-        The Old Woman with the Knife
-      </a></p>
-
-    </div>
+      <div class="book_links">
+        <img src="/thumbnails/oldwoman-cover.jpg" alt="Old Woman cover" class="cover">
+        <a href="https://www.goodreads.com/book/show/57938998-the-old-woman-with-the-knife?ac=1&from_search=true&qid=iLYQg4ub35&rank=1" target="_blank">
+          The Old Woman with the Knife by Gu Byeong-mo</a>
+      </div>
   </div>  
     
   </body>  
